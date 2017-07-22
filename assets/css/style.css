@@ -68,7 +68,8 @@ section {
 	position: relative;
 	padding-left: 30px;
 	padding-top: 50px;
-	margin: 50px auto 0px auto;
+	padding-bottom: 50px;
+	margin: 50px auto 100px auto;
 	background: #ffffff;
 	width: 650px;
 	min-height: 400px;
@@ -159,7 +160,6 @@ h4 {
 	text-align: left;
 	font-weight: bold;
 	border-bottom: solid #dddddd 1px;
-	width: 75%;
 }
 
 .profile-pic {
@@ -167,7 +167,6 @@ h4 {
 	width: 200px;
 	height: 200px;
 	margin: 20px 20px 10px 0px;
-	
 }
 
 /*vertical centering
@@ -229,13 +228,21 @@ input[type=submit] {
  	height: 550px;
  }
 
-.portfolio-section {
+/*.portfolio-section {
  	min-height: 800px;
  	height: auto;
  	margin-bottom: -30px;
  }
+*/
+.thumbnail-container {
+	position: relative;
+	float: left;
+	width: 285px;
+	height: 200px;
+	margin: 15px 20px 15px 0px;
+}
 
- .thumbnails {
+.thumbnails {
  	position: relative;
  	float: left;
 	width: 285px;
@@ -265,10 +272,16 @@ input[type=submit] {
 }
 
 img {
-	max-width: 100%
-	max-height: 100%;
+	width: 100%
+	height: auto;
 }
 
+/*.responsive {
+	padding: 0 6px;
+    float: left;
+    width: 49.99999%;
+}
+*/
 /* unvisited link */
 a:link {
     color: #777777;
@@ -292,9 +305,9 @@ a:active {
 @media screen and (max-width: 980px) {
 	
 	.wrapper {
-	width: 960px;
+/*	width: 960px;
 	height: 75px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;*/
 	padding-left: 95px;
 	padding-right: 40px;
 	}
@@ -302,83 +315,266 @@ a:active {
 	header {
 /*	float: left;*/
 	width: 20%;
-	padding-top: 25px;
-	padding-bottom: 15px;
+	/*padding-top: 25px;
+	padding-bottom: 15px;*/
 	margin: 0px auto 0px auto;
- 	background: #4aaaa5;
+ 	/*background: #4aaaa5;*/
  	height: 100%;
- 	color: white;
+ 	/*color: white;
  	font-weight: bold;
-	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-family: Georgia, Times, 'Times New Roman', serif;*/
  	}
 
 	nav {
-	float: right;
-	padding-top: 25px;
-	padding-bottom: 15px;
 	margin: 0px auto 0px auto;
-	width: 35%;
 	height: 100%;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 10pt;
+/*	background: red;*/
 	}
 
 	.container {
 	width: 100%;
-	height: 100%;
-	margin: 0 auto 0 auto;
 	padding-left: 100px;
 	padding-right: 100px;
+	margin: 0px auto;
 	}
 
 	section {
-	float: left;
-	position: relative;
-	padding-left: 30px;
-/*	padding-top: 50px;*/
 	margin: 50px auto 100px auto;
-	background: #ffffff;
 	width: 65%;
-/*	min-height: 400px;
-*/	overflow: hidden;
-	border: solid 1px #dddddd;
-	box-shadow: 3px 3px 10px lightgray;
+	padding-right: 30px;
 	}
-
+	
 	.profile-pic {
 	width: 100%;
 	height: 100%;
-/*	margin: 20px 20px 10px 0px;*/
 	padding: 0px 30px 20px 0px;
 	}
 
 	aside {
-	float: right;
-	position: relative;
 	padding: 50px 5px 0px 25px;
 	margin: 50px auto;
-	background: #ffffff;
 	width: 30%;
 	height: auto;
-	border: solid 1px #cccccc;
-	box-shadow: 3px 3px 10px lightgray;
 	}
 
 	.connect-icons {
-	float: left;
-	display: inline;
 	width: 20%;
 	height: 20%;
-	margin: 15px 5px;
 	}
 
+	.thumbnail-container {
+	width: 100%;
+	height: 100%;
+	margin: 15px 20px 15px 0px;
+	}
 
-}
+	.thumbnails {
+ 	width: 100%;
+	height: 100%;
+	margin: 15px auto 0px auto;
+ 	}
+
+ 	.thumbnail-header {
+	/*float: left;
+	position: absolute;*/
+	bottom: 10px;
+/*	width: 100%;
+*/	padding: 10px;
+/*	padding-bottom: 10px;
+*/	/*margin: 0px auto;*/
+/* 	background: #4aaaa5;
+ 	height: auto;
+ 	color: white;
+ 	font-weight: normal;
+ 	font-size: 10pt;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	clear: both;*/
+ }
+
 
 @media screen and (max-width: 768px) {
+	.wrapper {
+	width: 100%;
+	padding-left: 95px;
+	padding-right: 40px;
+	}
+
+	header {
+/*	float: left;*/
+	width: 30%;
+	/*padding-top: 25px;
+	padding-bottom: 15px;*/
+	margin: 0px auto 0px auto;
+ 	/*background: #4aaaa5;*/
+ 	height: 100%;
+ 	/*color: white;
+ 	font-weight: bold;
+	font-family: Georgia, Times, 'Times New Roman', serif;*/
+ 	}
+
+	nav {
+	margin: 0px auto 0px auto;
+	height: 100%;
+/*	background: red;*/
+	}
+
+	.container {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: 0px auto;
+	}
+
+	section {
+	margin: 50px auto 15px auto;
+	width: 100%;
+	padding-right: 30px;
+	clear: both;
+	}
 	
+	.profile-pic {
+	width: 50%;
+	height: auto;
+	padding: 0px 30px 20px 0px;
+	margin-right: 0px;
+	}
+
+	aside {
+	display: inline;
+	padding: 50px 5px 0px 25px;
+	margin: 15px auto 100px auto;
+	width: 100%;
+	height: auto;
+	}
+
+	.connect-icons {
+	width: 10%;
+	height: auto;
+	}
+
+	.thumbnail-container {
+	width: 47%;
+	height: 100%;
+	margin: 15px 12px 0px 0px;
+	}
+
+	.thumbnails {
+ 	width: 100%;
+	height: auto;
+/*	margin: 15px auto 0px auto;
+*//*	float: left;
+*/ 	}
+
+ 	.thumbnail-header {
+	/*float: left;
+	position: absolute;*/
+	bottom: 10px;
+	width: 100%;
+/*	width: 100%;
+*/	padding: 10px;
+/*	padding-bottom: 10px;
+*/	/*margin: 0px auto;*/
+/* 	background: #4aaaa5;
+ 	height: auto;
+ 	color: white;
+ 	font-weight: normal;
+ 	font-size: 10pt;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	clear: both;*/
+ }
 }
 
 @media screen and (max-width: 640px) {
+	.wrapper {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	header {
+/*	float: left;*/
+	width: 100%;
+	font-size: 24pt;
+	/*padding-top: 25px;
+	padding-bottom: 15px;*/
+	margin: 0px auto 0px auto;
+ 	/*background: #4aaaa5;*/
+ 	height: 100%;
+ 	/*color: white;
+ 	font-weight: bold;
+	font-family: Georgia, Times, 'Times New Roman', serif;*/
+ 	}
+
+	nav {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding-top: 20px;
+	height: 65%;
+	background: white;
+	}
+
+	.container {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: 0px auto;
+	}
+
+	section {
+	margin: 25px auto 15px auto;
+	width: 100%;
+	padding-right: 30px;
+	clear: both;
+	}
 	
+	.profile-pic {
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 10px 0px;
+	margin-right: 0px;
+	}
+
+	p {
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	line-height: 2;
+	}
+
+	nav > a {
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #777777;
+	}
+
+	.thumbnail-container {
+	width: 100%;
+	height: 100%;
+	margin: 15px 12px 0px 0px;
+	}
+
+	.thumbnails {
+ 	width: 100%;
+	height: auto;
+/*	margin: 15px auto 0px auto;
+*//*	float: left;
+*/ 	}
+
+ 	.thumbnail-header {
+	/*float: left;
+	position: absolute;*/
+	bottom: 10px;
+	width: 100%;
+/*	width: 100%;
+*/	padding: 10px;
+/*	padding-bottom: 10px;
+*/	/*margin: 0px auto;*/
+/* 	background: #4aaaa5;
+ 	height: auto;
+ 	color: white;
+ 	font-weight: normal;
+ 	font-size: 10pt;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	clear: both;*/
+ }
 }
