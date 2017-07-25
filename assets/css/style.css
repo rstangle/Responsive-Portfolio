@@ -66,9 +66,10 @@ nav {
 section {
 	float: left;
 	position: relative;
-	padding-left: 30px;
+/*	padding-left: 30px;
 	padding-top: 25px;
-	padding-bottom: 50px;
+	padding-bottom: 50px;*/
+	padding: 25px 30px 50px 30px;
 	margin: 50px auto 100px auto;
 	background: #ffffff;
 	width: 650px;
@@ -82,7 +83,7 @@ section {
 aside {
 	float: right;
 	position: relative;
-	padding: 50px 15px 0px 25px;
+	padding: 25px 20px 0px 20px;
 	margin: 50px 0px;
 	background: #ffffff;
 	width: 270px;
@@ -239,7 +240,7 @@ input[type=submit] {
 	float: left;
 	width: 285px;
 	height: 200px;
-	margin: 15px 20px 15px 0px;
+	margin: 15px 8px 15px 0px;
 }
 
 .thumbnails {
@@ -247,13 +248,13 @@ input[type=submit] {
  	float: left;
 	width: 285px;
 	height: 200px;
-	margin: 15px 20px 15px 0px;
+/*	margin: 15px 20px 15px 0px;*/
  }
 
 .thumbnail-header {
 	float: left;
 	position: absolute;
-	bottom: -10px;
+	bottom: 10px;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -358,7 +359,7 @@ a:active {
 	}
 
 	aside {
-	padding: 50px 5px 0px 25px;
+	padding: 25px 3% 0px 3%;
 	margin: 50px auto;
 	width: 30%;
 	height: auto;
@@ -367,6 +368,7 @@ a:active {
 	.connect-icons {
 	width: 20%;
 	height: 20%;
+	margin: 15px 5px;
 	}
 
 	.thumbnail-container {
@@ -455,7 +457,7 @@ a:active {
 
 	aside {
 	display: inline;
-	padding: 50px 5px 0px 25px;
+	padding: 25px 20px 0px 20px;
 	margin: 15px auto 100px auto;
 	width: 100%;
 	height: auto;
