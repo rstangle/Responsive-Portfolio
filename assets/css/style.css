@@ -23,12 +23,6 @@ body {
 	overflow: auto;
 }
 
-.wrapper {
-	width: 960px;
-	height: 75px;
-	margin: 0 auto 0 auto;
-}
-
 .container-header {
 /*	float: left;
 */	width: 100%;
@@ -36,6 +30,12 @@ body {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	background: white;
 	border-bottom: solid 1px #cccccc;
+}
+
+.wrapper {
+	width: 960px;
+	height: 75px;
+	margin: 0 auto 0 auto;
 }
 
 header {
@@ -67,7 +67,7 @@ section {
 	float: left;
 	position: relative;
 	padding-left: 30px;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-bottom: 50px;
 	margin: 50px auto 100px auto;
 	background: #ffffff;
@@ -136,10 +136,10 @@ a {
 }
 
 h2 {
-	position: absolute;
+	/*position: absolute;
 	top: 20px;
 	left: 30px;
-	right: 30px;
+	right: 30px;*/
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	background: white;
 	color: #4aaaa5;
@@ -149,10 +149,10 @@ h2 {
 }
 
 h4 {
-	position: absolute;
+/*	position: absolute;
 	top: 20px;
 	left: 30px;
-	right: 30px;
+	right: 30px;*/
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-size: 12pt;
 	background: white;
@@ -302,14 +302,21 @@ a:active {
     color: #4aaaa5;
 }
 
+/*************************************************************************************
+*************************************************************************************/
+
 @media screen and (max-width: 980px) {
 	
+	.container-header {
+	width: 100%;
+	}
+
 	.wrapper {
 /*	width: 960px;
 	height: 75px;
 	margin: 0 auto 0 auto;*/
-	padding-left: 95px;
-	padding-right: 40px;
+	padding-left: 12%;
+	padding-right: 12%;
 	}
 
 	header {
@@ -395,8 +402,8 @@ a:active {
 @media screen and (max-width: 768px) {
 	.wrapper {
 	width: 100%;
-	padding-left: 95px;
-	padding-right: 40px;
+	padding-left: 10%;
+	padding-right: 10%;
 	}
 
 	header {
@@ -420,15 +427,15 @@ a:active {
 
 	.container {
 	width: 100%;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
 	margin: 0px auto;
 	}
 
 	section {
 	margin: 50px auto 15px auto;
 	width: 100%;
-	padding-right: 30px;
+	padding: 5% 5%;
 	clear: both;
 	}
 	
@@ -437,6 +444,13 @@ a:active {
 	height: auto;
 	padding: 0px 30px 20px 0px;
 	margin-right: 0px;
+	}
+
+	p {
+	padding: 15px 0px;
+	margin: 0px auto;
+	text-align: left;
+	line-height: 2;
 	}
 
 	aside {
@@ -455,7 +469,7 @@ a:active {
 	.thumbnail-container {
 	width: 47%;
 	height: 100%;
-	margin: 15px 12px 0px 0px;
+	margin: 2% 3% 0px 0px;
 	}
 
 	.thumbnails {
@@ -513,10 +527,16 @@ a:active {
 	background: white;
 	}
 
+	nav > a {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #777777;
+	}
+
 	.container {
 	width: 100%;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
 	margin: 0px auto;
 	}
 
@@ -539,12 +559,6 @@ a:active {
 	margin: 0px 0px 0px 0px;
 	text-align: left;
 	line-height: 2;
-	}
-
-	nav > a {
-	padding-left: 50px;
-	padding-right: 50px;
-	color: #777777;
 	}
 
 	.thumbnail-container {
@@ -577,4 +591,20 @@ a:active {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	clear: both;*/
  }
+	
+/*	h2 {
+	position: absolute;
+	top: 20px;
+	left: 5%;
+	right: 30px;
+	margin-bottom: 5%;
+	}*/
+
+	.contact-labels {
+ 	text-align: left;
+ 	margin-top: 20px;
+ 	padding-right: 0px;
+ 	padding-top: 15%;
+ 	}
+
 }
